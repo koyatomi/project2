@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Project 2- Data Visualization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar:</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="Comparisons.html">Comparisons</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Natural Disasters
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Earthquakes/Earthquake.html">Earthquakes</a>
+                        <a class="dropdown-item" href="Volcano/Volcano.html">Volcanoes</a>
+                        <a class="dropdown-item" href="Tsunami/Tsunami.html">Tsunami</a>
+                        <a class="dropdown-item" href="Poverty/Poverty.html">World Poverty</a>
+                    </div>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/wilmorecn/Project_2-Data_Visualization.git">Project 2
+                        GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h3>Natual Disasters and World Poverty</h3>
+            <p>The purpose of this project was to analyze if natural disasters around the world possibly
+                impact global poverty rates throught geovisualization.</p>
+        </div>
+        <div class="row"><h3>Natural Disasters</h3>
+            <div class="row">
+                <p>Click any chart to get an indepth analysis</p>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col">Earthquakes
+                            <a href="Earthquakes/Earthquake.html">
+                                <img class="img-fluid weather_image" id="image1" src="Images/earthquakes_pic.png"
+                                    alt="Earthquake_picture_small" href="Earthquakes/Earthquake.html" /></a>
+                        </div>
+                        <div class="col">Volcanoes
+                            <a href="Volcano/Volcano.html">
+                                <img class="img-fluid weather_image" id="image2" src="Images/volcano_pic.png"
+                                    alt="Volcano_picture_small" href="Volcano/Volcano.html" /></a>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">Tsunamis
+                            <a href="Tsunami/Tsunami.html">
+                                <img class="img-fluid weather_image" id="image3" src="Images/tsunami_pic.png"
+                                    alt="Tsunami_picture_small" href="Tsunami/Tsunami.html" /></a>
+                        </div>
+                        <div class="col">World Poverty
+                            <a href="Poverty/Poverty.html">
+                                <img class="img-fluid poverty" id="image4" src="Images/PovertyMapImage.png"
+                                    alt="Poverty_map_small" href="Poverty/Poverty.html" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

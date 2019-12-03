@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Visualization: Tsunamis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="tsunami_style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar:</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../homepage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="Comparisons.html">Comparisons</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Natural Disasters
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../Earthquakes/Earthquake.html">Earthquakes</a>
+                        <a class="dropdown-item" href="../Volcano/Volcano.html">Volcanoes</a>
+                        <a class="dropdown-item">Tsunami</a>
+                        <a class="dropdown-item" href="../Poverty/Poverty.html">World Poverty</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h3>Summary: Tsunamis and World Poverty</h3>
+        <div class="row">
+            <div class="col" style="width: 100vw; height: 25vh">
+                <p>A tsunami (pronounced soo-NAHM-ee) is a series of huge waves that occur as the result of a violent
+                    underwater disturbance, such as an earthquake or volcanic eruption. The waves travel in all
+                    directions from the epicenter of the disturbance. The waves may travel in the open sea as fast as
+                    450 miles per hour. As they travel in the open ocean, tsunami waves are generally not particularly large—hence the difficulty in
+                    detecting the approach of a tsunami. But as these powerful waves approach shallow waters along the coast, their velocity is
+                    slowed and they consequently grow to a great height before smashing into the shore. They can grow as
+                    high as 100 feet; the Indian Ocean tsunami generated waves reaching 30 feet. There are three:
+                    inundation, wave impact on structures, and erosion. Strong, tsunami-induced currents lead to the
+                    erosion of foundations and the collapse of bridges and seawalls. Flotation and drag forces move
+                    houses and overturn railroad cars. Considerable damage is caused by the resultant floating debris,
+                    including boats and cars that become dangerous projectiles that may crash into buildings, break
+                    power lines, and may start fires. Fires from damaged ships in ports or from ruptured coastal oil
+                    storage tanks and refinery facilities, can cause damage greater than that inflicted directly by the
+                    tsunami.<br>Developing countries are most exposed to the risks of disasters as their inhabitants
+                    often lack the ability to cope with or adapt to such events, especially in the case of re-occurring
+                    disasters. As more than half the world’s population lives in cities, poorly planned and managed
+                    urban development is a key driver of disaster risk. Poor housing, lack of health facilities and
+                    infrastructure put nearly one billion urban dwellers living in informal settlements at risk of
+                    disasters. The lives and livelihoods of people living in flood plains, low lying coastal areas and
+                    steep slopes are particularly in danger.<br>(https://www.infoplease.com/world/)
+                    (https://reliefweb.int/report/world/)
+                </p>
+                <div id="map" style="width: 100vw; height: 75vh"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <!-- D3 JavaScript -->
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+    
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="tsunami_logic.js"></script>
+    <script type="text/javascript" src="leaflet.js"></script>
+
+</body>
+
+</html>
